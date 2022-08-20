@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------HEADER---------*/
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: #ffb4a2;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 40px;
+  background-image: url(../img/logo.jpg);
+  background-position: right;
+  background-size: 190px;
+  background-repeat: no-repeat;
+}
+header nav ul {
+  list-style-type: none;
+  background-color: #e5989b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+header nav ul li i {
+  color: #ffcdb2;
+  font-size: 20px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul a:hover {
+  color: #6d6875;
+}
+
+/*----------HERO SECTION---------*/
+.herosec {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  height: 270px;
+  background-image: url(../img/fondo3.jpg);
+  background-size: cover;
+  border: dotted 1px #6d6875;
+}
+.herosec:hover {
+  text-decoration: underline;
+}
+.herosec__sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: 200px;
+  background-image: url(../img/fondo2.jpg);
+  background-size: cover;
+  border: dotted 1px #6d6875;
+}
+.herosec__sec:hover {
+  text-decoration: underline;
+  background-image: url(../img/fondo3.jpg);
+}
+.herosec__sec__titule {
+  font-size: 50px;
+}
+
+/*----------INDEX---------*/
+.index {
+  display: grid;
+  height: 900px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+  background-color: #e5989b;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  grid-template-areas: "servicios servicios" "posts tipsemana";
+}
+.index__img {
+  object-fit: cover;
+  transition: 0.5s;
+  width: 150px;
+  height: 150px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 10px black;
+}
+.index__img:hover {
+  transform: scale(1.7);
+}
+.index__serv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: servicios;
+  color: white;
+  font-size: 30px;
+}
+.index__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: posts;
+  color: white;
+  font-size: 30px;
+}
+.index__tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: tipsemana;
+  color: white;
+  font-size: 30px;
+}
+.index__vermas {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.index__vermas:hover {
+  transform: scale(1.7);
+  color: #ffcdb2;
+}
+.index__vermas2 {
+  font-size: 15px;
+}
+
+/*------SERVICIOS-------*/
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.servicios__tipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: solid 1px;
+  border-style: outset;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.534);
+}
+.servicios__titule {
+  color: #ffcdb2;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.servicios__img {
+  width: 100px;
+  height: 100px;
+}
+.servicios__text {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.servicios__boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 130px;
+  color: #6d6875;
+  text-decoration: none;
+  border: solid 1px #6d6875;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.servicios__boton__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.servicios__boton:hover {
+  background-color: #b5838d;
+  color: white;
+}
+
+/*------POSTS-------*/
+.carousel {
+  display: flex;
+  margin: 10px;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.videos {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.videos__titule {
+  text-align: center;
+  color: #b5838d;
+  font-size: 40px;
+}
+.videos__titule:hover {
+  color: #ffcdb2;
+}
+
+/*---------TIPSEMANAL----------*/
+.tips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 60px;
+  margin: 20px;
+}
+.tips__tipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  gap: 50px;
+}
+.tips__img {
+  width: 150px;
+  height: 150px;
+  transition: 0.5s;
+}
+.tips__img:hover {
+  transform: scale(2);
+}
+.tips__titule {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 50px;
+  width: 150px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.336);
+  font-style: italic;
+  font-size: 20px;
+  color: #ffcdb2;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*-------CONTACTO-------*/
+.contacto {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.contacto__titule {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px;
+}
+
+form div {
+  margin: 10px;
+}
+
+/*------FOOTER-------*/
+footer section ul {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/logo.jpg);
+  background-size: contain;
+  background-position-x: center;
+  margin-top: 20px;
+}
+footer section ul i {
+  font-size: 20px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+footer section ul i:hover {
+  transform: scale(2);
+  color: #ffb4a2;
+}
+
+/*# sourceMappingURL=styles.css.map */
