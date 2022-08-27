@@ -10,9 +10,10 @@ header h1 {
   font-style: italic;
   color: #ffb4a2;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4vw;
   background-image: url(../img/logo.jpg);
   background-position: right;
   background-size: 190px;
@@ -25,10 +26,11 @@ header nav ul {
   justify-content: space-evenly;
   align-items: center;
   height: 50px;
+  margin-bottom: 0;
 }
 header nav ul li i {
   color: #ffcdb2;
-  font-size: 20px;
+  font-size: 2vw;
 }
 header nav ul a {
   text-decoration: none;
@@ -45,12 +47,15 @@ header nav ul a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  height: 270px;
-  background-image: url(../img/fondo3.jpg);
+  color: rgb(82, 31, 177);
+  height: 40vw;
+  font-size: 3vw;
+  background-image: url(../img/fondo.jpg);
   background-size: cover;
   border: dotted 1px #6d6875;
+}
+.herosec_amor {
+  font-size: 3vw;
 }
 .herosec:hover {
   text-decoration: underline;
@@ -61,7 +66,7 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  height: 200px;
+  height: 30vw;
   background-image: url(../img/fondo2.jpg);
   background-size: cover;
   border: dotted 1px #6d6875;
@@ -71,20 +76,24 @@ header nav ul a:hover {
   background-image: url(../img/fondo3.jpg);
 }
 .herosec__sec__titule {
-  font-size: 50px;
+  font-size: 5vw;
 }
 
 /*----------INDEX---------*/
 .index {
   display: grid;
-  height: 900px;
+  height: 1000px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 40px;
+  column-gap: 10px;
   background-color: #e5989b;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   grid-template-areas: "servicios servicios" "posts tipsemana";
+}
+@media (max-width: 760px) {
+  .index {
+    display: block;
+  }
 }
 .index__img {
   object-fit: cover;
@@ -143,6 +152,11 @@ header nav ul a:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 760px) {
+  .servicios {
+    display: block;
+  }
 }
 .servicios__tipo {
   display: flex;
@@ -227,6 +241,11 @@ header nav ul a:hover {
   gap: 60px;
   margin: 20px;
 }
+@media (max-width: 760px) {
+  .tips {
+    display: block;
+  }
+}
 .tips__tipo {
   display: flex;
   flex-direction: column;
@@ -236,13 +255,13 @@ header nav ul a:hover {
   font-weight: bold;
   gap: 50px;
 }
+.tips__tipo:hover {
+  transform: scale(1.7);
+}
 .tips__img {
   width: 150px;
   height: 150px;
   transition: 0.5s;
-}
-.tips__img:hover {
-  transform: scale(2);
 }
 .tips__titule {
   display: flex;
@@ -259,16 +278,6 @@ header nav ul a:hover {
 }
 
 /*-------CONTACTO-------*/
-.contacto {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.contacto__titule {
-  text-align: center;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -290,12 +299,15 @@ footer section ul {
   background-position-x: center;
   margin-top: 20px;
 }
-footer section ul i {
+
+.icono {
   font-size: 20px;
+  color: #6d6875;
+  background-color: white;
   margin: 10px;
   transition: all 0.3s ease-in-out;
 }
-footer section ul i:hover {
+.icono:hover {
   transform: scale(2);
   color: #ffb4a2;
 }
