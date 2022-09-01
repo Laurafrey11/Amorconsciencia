@@ -4,6 +4,11 @@
     box-sizing: border-box;
     }
 
+    $header: (
+        letter: #ffb4a2,
+        fondo: #e5989b,
+    );
+
 
     /*----------HEADER---------*/
 
@@ -11,7 +16,7 @@
         h1{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-style: italic;
-        color: #ffb4a2;
+        color: map-get($map: $header, $key: "letter" );
         text-align: left;
         margin-left: 20px;
         margin-right: 20px;
@@ -25,7 +30,7 @@
         nav{
             ul{
                 list-style-type: none;
-                background-color: #e5989b;
+                background-color: map-get($map: $header, $key: "fondo" );
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
@@ -92,6 +97,10 @@
 
 
 /*----------INDEX---------*/
+.index__serv{
+    display: flex;
+    flex-direction: column;
+}
 
 .index{
     display: grid;
@@ -128,8 +137,7 @@
         font-size: 30px;
     }
     &__posts{
-        display: flex;
-        flex-direction: column;
+        @extend .index__serv;
         align-items: center;
         grid-area: posts;
         color: white;
@@ -160,6 +168,12 @@
 
 /*------SERVICIOS-------*/
 
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .servicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,10 +185,7 @@
         display: block;
     }
     &__tipo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         margin: 20px;
         border: solid 1px;
         border-style: outset;
