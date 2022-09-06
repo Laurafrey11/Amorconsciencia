@@ -1,0 +1,22 @@
+/*------FOOTER-------*/
+
+footer section ul{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/logo.jpg);
+    background-size: contain;
+    background-position-x: center;
+    margin-top: 20px;
+    }
+
+.icono{
+        font-size: 20px;
+        color: #6d6875;
+        background-color: white;
+        margin: 10px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: scale(2);
+            color: #ffb4a2;
+        }
+    }
