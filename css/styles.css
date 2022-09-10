@@ -4,42 +4,6 @@
   box-sizing: border-box;
 }
 
-/*----------HEADER---------*/
-header h1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
-  color: #ffb4a2;
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: 4vw;
-  background-image: url(../img/logo.jpg);
-  background-position: right;
-  background-size: 190px;
-  background-repeat: no-repeat;
-}
-header nav ul {
-  list-style-type: none;
-  background-color: #e5989b;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-  margin-bottom: 0;
-}
-header nav ul li i {
-  color: #ffcdb2;
-  font-size: 2vw;
-}
-header nav ul a {
-  text-decoration: none;
-  color: white;
-}
-header nav ul a:hover {
-  color: #6d6875;
-}
-
 /*----------HERO SECTION---------*/
 .herosec {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -74,6 +38,8 @@ header nav ul a:hover {
 .herosec__sec:hover {
   text-decoration: underline;
   background-image: url(../img/fondo3.jpg);
+  color: #6d6875;
+  transition-duration: 2s;
 }
 .herosec__sec__titule {
   font-size: 5vw;
@@ -103,14 +69,15 @@ header nav ul a:hover {
 .index__img {
   object-fit: cover;
   transition: 0.5s;
-  width: 150px;
-  height: 150px;
+  width: 30vw;
+  height: 30vw;
   margin-top: 80px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 10px black;
 }
 .index__img:hover {
   transform: scale(1.7);
+  transition-duration: 1.5s;
 }
 .index__serv, .index__posts {
   display: flex;
@@ -209,17 +176,8 @@ header nav ul a:hover {
 }
 
 /*------POSTS-------*/
-.carousel {
-  display: flex;
-  margin: 10px;
-  height: 500px;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-
 .videos {
-  margin: 30px;
+  margin: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,10 +186,13 @@ header nav ul a:hover {
 .videos__titule {
   text-align: center;
   color: #b5838d;
-  font-size: 40px;
+  font-size: 7vw;
 }
 .videos__titule:hover {
   color: #ffcdb2;
+}
+.videos_ej {
+  height: 40vw;
 }
 
 /*---------TIPSEMANAL----------*/
@@ -241,8 +202,8 @@ header nav ul a:hover {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
-  gap: 60px;
-  margin: 20px;
+  gap: 10vw;
+  margin: 10vw;
 }
 @media (max-width: 760px) {
   .tips {
@@ -256,28 +217,66 @@ header nav ul a:hover {
   align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  gap: 50px;
+  gap: 5vw;
 }
 .tips__tipo:hover {
   transform: scale(1.7);
+  transition-duration: 3s;
 }
 .tips__img {
-  width: 150px;
-  height: 150px;
+  width: 20vw;
+  height: 20vw;
   transition: 0.5s;
 }
 .tips__titule {
   display: flex;
   justify-content: center;
   justify-items: center;
-  height: 50px;
-  width: 150px;
+  height: 7vw;
+  width: 30vw;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.336);
   font-style: italic;
-  font-size: 20px;
-  color: #ffcdb2;
+  font-size: 4vw;
+  color: #b5838d;
   border-radius: 50%;
   text-align: center;
+}
+
+/*-------------*/
+/*----------HEADER---------*/
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: #ffb4a2;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 4vw;
+  background-image: url(../img/logo.jpg);
+  background-position: right;
+  background-size: 40vw;
+  background-repeat: no-repeat;
+}
+header nav ul {
+  list-style-type: none;
+  background-color: #e5989b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 0;
+}
+header nav ul li i {
+  color: #ffcdb2;
+  font-size: 2vw;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul a:hover {
+  color: #6d6875;
 }
 
 /*-------CONTACTO-------*/
@@ -293,7 +292,6 @@ form div {
   margin: 10px;
 }
 
-/*-------------*/
 /*------FOOTER-------*/
 footer section ul {
   display: flex;
@@ -314,6 +312,22 @@ footer section ul {
 .icono:hover {
   transform: scale(2);
   color: #ffb4a2;
+}
+
+/*------POSTS-------*/
+.carousel {
+  display: flex;
+  margin: 5vw;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.carousel-caption {
+  color: #6d6875;
+  text-align: center;
+}
+.carousel-img {
+  height: 50vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
