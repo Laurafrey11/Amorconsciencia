@@ -64,15 +64,16 @@
 @media (max-width: 760px) {
   .index {
     display: block;
+    height: 120vw;
   }
 }
 .index__img {
   object-fit: cover;
   transition: 0.5s;
-  width: 30vw;
-  height: 30vw;
-  margin-top: 80px;
-  margin-bottom: 30px;
+  width: 10vw;
+  height: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 6vw;
   box-shadow: 10px 10px 10px black;
 }
 .index__img:hover {
@@ -327,7 +328,7 @@ footer section ul {
   text-align: center;
 }
 .carousel-img {
-  height: 50vw;
+  height: 30vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
